@@ -26,7 +26,7 @@ get_stackOverFlowData = function(app_path, query_string, my_filename) {
 
   #Fixed filename: data/STO_<xxx>_data.RData
   my_file = app_path
-  my_file = paste(my_file, "data/", sep="", collapse=" ")
+  my_file = paste(my_file, "/data/", sep="", collapse=" ")
   dir.create(my_file, showWarnings = TRUE, recursive = TRUE, mode = "0777")
   my_file = paste(my_file, "STO_", sep="", collapse=" ")
   my_file = paste(my_file, my_filename, sep="", collapse=" ")

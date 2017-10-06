@@ -1,5 +1,5 @@
 # Set The workingDir to your project's path
-workingDir = ""
+workingDir = "C:/Users/chamek/Desktop/trend-analysis"
 # Change the libpath if you already have an R library in a different location
 libPath = paste(workingDir, "/Library", sep="", collapse=" ")
 setwd(workingDir)
@@ -17,8 +17,8 @@ source(paste(workingDir, "/Helpers/GetStackOverflowData.R", sep="", collapse=" "
 source(paste(workingDir, "/Helpers/GetTwitterData.R", sep="", collapse=" "))
 source(paste(workingDir, "/Helpers/GetScopusData.R", sep="", collapse=" "))
 
-data = get_stackOverFlowData(output_path, query_string, output_filename)
-data = get_MyTwitterData(output_path, query_string, output_filename, get_tweets_java_path)
+#data = get_stackOverFlowData(output_path, query_string, output_filename)
+#data = get_MyTwitterData(output_path, query_string, output_filename, get_tweets_java_path)
 
 #To get the scopus data:
 #  1 - Update API key in ./Helpers/Set_MyScopus_APIKey.R

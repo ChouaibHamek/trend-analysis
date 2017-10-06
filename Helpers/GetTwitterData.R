@@ -59,7 +59,7 @@ get_MyTwitterData = function (app_path, query_string, my_filename, get_tweets_ja
 
   #Fixed filename: data/my_twitter_<xxx>_data.RData
   my_file = app_path
-  my_file = paste(my_file, "data/", sep="", collapse=" ")
+  my_file = paste(my_file, "/data/", sep="", collapse=" ")
   dir.create(my_file, showWarnings = TRUE, recursive = TRUE, mode = "0777")
   my_file = paste(my_file, "twitter_", sep="", collapse=" ")
   my_file = paste(my_file, my_filename, sep="", collapse=" ")
