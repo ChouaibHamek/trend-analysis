@@ -93,5 +93,6 @@ stopword_list = c(stopwords("english"), "microservice", "microservices", "servic
                   "architectures", "used", "present", "environment", "way", "app", "get", "project", "request", 
                   "different", "code", "also", "create", "great", "however", "run", "running", "multiple", "know", 
                   "now", "trying", "example", "micro", "two", "just", "file", "call", "make", "access", "ive", 
-                  "another", "best", "question", "message", "don't", "dont", "build", "work", "thanks", "following")
-apply_stopwords(stopword_list)
+                  "another", "best", "question", "message", "don't", "dont", "build", "work", "thanks", "following",
+                  "implementation", "enabling", "towards", "basic", "event", "projects", "check", "part", "aware")
+apply_stopwords(final_stopword_list)
