@@ -13,14 +13,8 @@ sto_articles = my_articles
 load ("C:/Users/Chouaib/Desktop/FinalReport/Data/my_twitter_ci_data.RData")
 twitter_articles = my_articles
 
-stopword_list = c(stopwords("english"), "microservice", "microservices", "service", "services", "use", "data", 
-                  "application", "system", "systems", "architecture", "applications", "paper", "can", "based", 
-                  "approach", "provide", "based", "using", "software", "twitter", "com", "architecture", "via", 
-                  "new", "pic", "need", "want", "like", "one", "will", "development", "model", "models", "also", 
-                  "architectures", "used", "present", "environment", "way", "app", "get", "project", "request", 
-                  "different", "code", "also", "create", "great", "however", "run", "running", "multiple", "know", 
-                  "now", "trying", "example", "micro", "two", "just", "file", "call", "make", "access", "ive", 
-                  "another", "best", "question", "message", "don't", "dont", "build", "work", "thanks", "following")
+source("StopwordList.R")
+stopword_list = final_stopword_list
 
 scopus_text <- paste (scopus_articles$Title, scopus_articles$Abstract_clean)
 sto_text <- paste (sto_articles$Title, sto_articles$Abstract_clean)
