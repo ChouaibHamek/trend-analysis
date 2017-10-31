@@ -27,6 +27,13 @@ scopus_text = scopus_text %>% removeNumbers %>% removeSpecialChars %>% tolower
 sto_text = sto_text %>% removeNumbers %>% removeSpecialChars %>% tolower
 twitter_text = twitter_text %>% removeNumbers %>% removeSpecialChars %>% tolower
 
+source("grouping_script.R")
+#Group words with similar meaning
+scopus_text =  grouping(scopus_text)
+sto_text =  grouping(sto_text)
+twitter_text =  grouping(twitter_text)
+
+#Removing stopwords
 scopus_text =  removeWords(scopus_text,stopword_list)
 sto_text =  removeWords(sto_text,stopword_list)
 twitter_text =  removeWords(twitter_text,stopword_list)

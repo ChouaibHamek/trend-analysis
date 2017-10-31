@@ -38,6 +38,12 @@ scopus_all_titles <- removeSpecialChars(scopus_all_titles)
 sto_all_titles <- removeSpecialChars(sto_all_titles)
 twitter_all_titles <- removeSpecialChars(twitter_all_titles)
 
+source("grouping_script.R")
+#Group words with similar meaning
+scopus_all_titles =  grouping(scopus_all_titles)
+sto_all_titles =  grouping(sto_all_titles)
+twitter_all_titles =  grouping(twitter_all_titles)
+
 #removing stop words
 scopus_all_titles <- removeWords(scopus_all_titles, stopword_list)
 sto_all_titles <- removeWords(sto_all_titles, stopword_list)
@@ -91,8 +97,9 @@ scopus_all_titles <- c(paste(q1_t, collapse=" "),
                   paste(q3_t, collapse=" "), 
                   paste(q4_t, collapse=" "))
 
-removeSpecialChars <- function(x) gsub("[^a-zA-Z0-9 ]","",x)
+
 scopus_all_titles <- removeSpecialChars(scopus_all_titles)
+scopus_all_titles =  grouping(scopus_all_titles)
 scopus_all_titles <- removeWords(scopus_all_titles, stopword_list)
 
 scopus_tdm <- scopus_all_titles %>% VectorSource %>% Corpus %>% TermDocumentMatrix %>% as.matrix
@@ -116,8 +123,9 @@ sto_all_titles <- c(paste(q1_t, collapse=" "),
                     paste(q3_t, collapse=" "), 
                     paste(q4_t, collapse=" "))
 
-removeSpecialChars <- function(x) gsub("[^a-zA-Z0-9 ]","",x)
+
 sto_all_titles <- removeSpecialChars(sto_all_titles)
+sto_all_titles <- grouping(sto_all_titles)
 sto_all_titles <- removeWords(sto_all_titles, stopword_list)
 
 sto_tdm <- sto_all_titles %>% VectorSource %>% Corpus %>% TermDocumentMatrix %>% as.matrix
@@ -141,8 +149,9 @@ twitter_all_titles <- c(paste(q1_t, collapse=" "),
                        paste(q3_t, collapse=" "), 
                        paste(q4_t, collapse=" "))
 
-removeSpecialChars <- function(x) gsub("[^a-zA-Z0-9 ]","",x)
+
 twitter_all_titles <- removeSpecialChars(twitter_all_titles)
+twitter_all_titles =  grouping(twitter_all_titles)
 twitter_all_titles <- removeWords(twitter_all_titles, stopword_list)
 
 twitter_tdm <- twitter_all_titles %>% VectorSource %>% Corpus %>% TermDocumentMatrix %>% as.matrix
