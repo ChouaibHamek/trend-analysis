@@ -7,19 +7,19 @@ final_stopword_list = c(stopwords("english"), "microservice", "microservices", "
                         "now", "trying", "example", "micro", "two", "just", "file", "call", "make", "access", "ive", 
                         "another", "best", "question", "message", "don't", "dont", "build", "work", "thanks", "following",
                         "implementation", "enabling", "towards", "basic", "event", "projects", "check", "part", "aware",
-                        # Hierarhical clustering: scopus part 1
+                        # Scopus further iteration 1
                         "environments", "various", "devices", "users", "user", "within", "needed", "propose", 
                         "presents", "specific", "large", "developed", "solutions", "many",
                         "existing", "well", "small", "provides", "set", "level", "real", "oriented", "process", "proposed",
                         "information", "driven", "results", "approaches", 
                         "show", "processes", "number", "key", "high", "end", "current", "technology",
-                        # Hierarhical clustering: scopus part2
+                        # Scopus further iteration 2
                         "platform", "design", "resources", "management", "time", "framework", "network", "research",
                         "components", "support", "analysis", "monitoring", "solution", "communication", "context", 
                         "computing", "complexity", "evolution", "open", "migration", "lightweight",
                         "engineering", "challenges", "requirements", "digitalization", "order", "due", "building", "providers", "first",
                         "needs", "business",
-                        # Hierarhical clustering: STO
+                        # STO further iteration
                         "im", "working", "see", "without", "case", "possible", "able", "etc", "every", "something", "currently",
                         "created", "works", "found", "looking", "right", "seems", "find", "id", "add", "main", "good", "say",
                         "think", "start", "files", "method", "idea", "since", "really", "understand", "handle", "cant", "getting",
@@ -29,14 +29,14 @@ final_stopword_list = c(stopwords("english"), "microservice", "microservices", "
                         "uses", "done", "point", "image", "share", "core", "already", "write", "send", "version",
                         "please", "help", "issue", "problem", "read", "better", "simple", "module", "go", "lot", "error", "single", "separate",
                         "post",
-                        # Hierarhical clustering: Twitter part 1
+                        # Twitter further iteration 1
                         "talk", "learn", "tech", "developer", "programming", "vs", "world", "today", "us", "re", "next", "developers", "big",
                         "don", "dev", "de", "day", "news", "full", "much", "join", "nice", "live", "technologypic", "york",
                         "register", "week", "ready", "th", "ll", "latesting", "take", "look", "und", "london", "native", "talking",
                         "developing", "presentation", "top", "introduction", "watch", "team", "modern", "tomorrow", "ve", "started",
                         "speaking", "teams", "panel", "en", "must", "exhibit", "keynote", "der", "forward", "opportunities", "con", "series",
                         "journey",  "week", "teams", "register", "architect", "last",
-                        # Hierarhical clustering: Twitter part 2
+                        # Twitter further iteration 2
                         "meetup", "book", "guide", "summit", "article", "blog", "slides", "workshop", "journal", "video", "job", "future",
                         "interesting", "talks", "cool", "awesome", "love", "things", "lessons", "manage", "managing", "podcast", "die", "principles",
                         "free", "easy", "people", "engineer", "webinar", "session", "trends", "practices", "benefits")
